@@ -1,0 +1,27 @@
+{
+    "name": "souravmsh/compressed-output",
+    "description": "Compressed/Optimize output of the laravel application source code",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Shohrab Hossain",
+            "email": "sourav.diubd@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": { 
+    },
+    "autoload": {
+        "psr-4": {
+            "Souravmsh\\CompressedOutput\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "Souravmsh\\CompressedOutput\\PackageServiceProvider"
+          ]
+      }
+  }
+}
