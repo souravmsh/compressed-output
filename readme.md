@@ -16,17 +16,15 @@ git clone https://github.com/souravmsh/compressed-output.git
 3. Add package repositories to the application-root `composer.json` file
 
 ```json
-    "extra": { 
-        "repositories": [ 
-            {
-                "type": "path",
-                "url": "./packages/souravmsh/compressed-output"
-            } 
-        ],
-        "require": { 
-            "souravmsh/compressed-output": "dev-main"
-         }
-    },
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "./packages/souravmsh/compressed-output",
+            "options": {
+                "symlink": true
+            }
+        }
+    }
 ```
 
 4. install package via comopser
