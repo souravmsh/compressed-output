@@ -59,11 +59,6 @@ class CompressedOutputMiddleware
                 return '<style>' . preg_replace(array_keys($replace), array_values($replace), $matches[1]) . '</style>';
             }, $responseContent);
 
-            // Minify inline JS (excluding JSON)
-            $responseContent = preg_replace_callback('/<script[^>]*>(.*?)<\/script>/is', function ($matches) use ($replace) {
-                return '<script>' . preg_replace(array_keys($replace), array_values($replace), $matches[1]) . '</script>';
-            }, $responseContent);
-
             $response->setContent(preg_replace(array_keys($replace), array_values($replace), $responseContent));
         }
 
