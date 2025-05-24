@@ -1,15 +1,20 @@
 {
     "name": "souravmsh/compressed-output",
     "description": "Compressed/Optimize output of the laravel application source code",
-    "type": "library",
+    "keywords": [
+        "souravmsh",
+        "laravel",
+        "laravel-widget"
+    ],
+    "homepage": "https://github.com/souravmsh/laravel-widget",
     "license": "MIT",
     "authors": [
         {
-            "name": "Md. Shohrab Hossain",
-            "email": "sourav.diubd@gmail.com"
+            "name": "Shohrab Hossain",
+            "email": "sourav.diubd@gmail.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
     "require": { 
     },
     "autoload": {
@@ -23,5 +28,7 @@
               "Souravmsh\\CompressedOutput\\PackageServiceProvider"
           ]
       }
-  }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

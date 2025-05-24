@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'enable'  => env('COMPRESSED_OUTPUT_EANBLE', true),
+    'enable' => env('COMPRESSED_OUTPUT_ENABLE', false),
 ];
